@@ -159,6 +159,10 @@ int main(){
     cout<<"Pick your side :\n 1. Heads\n 2. Tails"<<endl;
     int userNum;
     cin>>userNum;
+    while(userNum != 1 && userNum != 2){
+        cout<<"enter a valid option"<<endl;
+        cin>>userNum;
+    }
     int randNumber = rand()%2;
     if(userNum == randNumber + 1){
       cout<<"you won the toss, Go first"<<endl;
@@ -201,7 +205,7 @@ int main(){
       }
 
     }
-    else{
+    else if(userNum == randNumber + 2){
       cout<<"you lost the toss"<<endl;
       int moveIndex = 0;
       while(true){
