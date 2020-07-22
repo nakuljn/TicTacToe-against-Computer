@@ -205,7 +205,7 @@ int main(){
       }
 
     }
-    else if(userNum == randNumber + 2){
+    else{
       cout<<"you lost the toss"<<endl;
       int moveIndex = 0;
       while(true){
